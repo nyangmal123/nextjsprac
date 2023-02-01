@@ -19,7 +19,7 @@ export async function getServerSideProps(context) {
   const { params } = context;
   const { id } = params;
 
-  const response = await fetch(`https://few-awake-tarp.glitch.me/posts/${id}`);
+  const response = await fetch(`https://few-awake-tarp.glitch.me/${id}`);
   const post = await response.json();
 
   return {
